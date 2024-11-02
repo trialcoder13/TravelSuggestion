@@ -19,15 +19,40 @@
             <li><a href="index.html#Expenses">Expenses</a></li>
         </ul>
     </section>
-    <hr>
     <img src="img/travel-quotes-inspiration-to-travel-is-to-live-480x720.jpg" alt="A cliche quote on travelling" width="380" height="420" title="Quote">
     <figcaption>Travelling Quote</figcaption>
     <section id="form">
+        <h2>Suggestion Form</h2>
         <form action="https://httpbin.org/get" method="get">
             <fieldset>
                 <legend>suggestions</legend>
                 <label for="fullname">FullName</label>
                 <input type="text" name="FirstName" id="fullname" placeholder="naam title" autocomplete="on" autofocus>
+                <br>
+                <label for="phone">Phone No</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+                <br>
+                <label for="mail">Gmail</label>
+                <input type="mail" name="gamil" id="mail">
+                <br>
+                <label for="suggestion">Your Suggestion</label>
+                <select name="suggestion" id="suggestion">
+                  <optgroup label="mountain regions">
+                    <option value="Ladakh">Ladakh</option>
+                    <option value="Kathmandu">Kathmandu</option>
+                    <option value="uttrakhand">uttrakhand</option>
+                  </optgroup>
+                  <optgroup label="snowy">
+                    <option value="Kashmir">Kashmir</option>
+                    <option value="Rishikesh">Rishikesh</option>
+                    <option value="Shimla">Shimla</option>
+                  </optgroup>
+                  <optgroup label="BigCities">
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Banglore">Banglore</option>
+                    <option value="Hydrebad">Hydrebad</option>
+                  </optgroup> 
+                </select>
             </fieldset>
         </form>
     </section>
